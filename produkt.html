@@ -17,25 +17,37 @@
     <header>
         <a href="index.html"><img src="media/logo.png" alt="hem"></a>
         <a href="butik.html" class="hideMobile">Butik</a>
-        <a href="butik.html" class="hideMobile">Auktioner</a>
+        <a href="butik.html" class="hideMobile">Sälj</a>
         <div style="margin-top: auto; margin-bottom: 2px;" class="hideMobile">
             <input type="text" placeholder="Sök produkt">
         </div>
         <a href="vagn.html" style="font-size: 32px;">🛒</a>
     </header>
+
     <main>
         <div id="content">
             <a href="butik.html" style="text-decoration:none;color:black;">
                 <p>⬅ Tillbaka</p>
             </a>
+
             <article id="shop">
                 <div id="product" style="width: 75%;">
                     <div id="productShop">
-                        <img style="margin-right: 10px;" src="media/bild12.webp" alt="bild av disc">
-                        <img style="margin-right: 10px;" src="media/bild13.webp" alt="bild av disc">
-                        <img style="margin-right: 10px;" src="media/bild14.webp" alt="bild av disc">
+                        <picture>
+                            <source srcset="media/bild12.webp" type="image/webp">
+                            <img style="margin-right: 10px;" src="media/bild12.jpg" alt="bild av disc">
+                        </picture>
+                        <picture>
+                            <source srcset="media/bild13.webp" type="image/webp">
+                            <img style="margin-right: 10px;" src="media/bild13.jpg" alt="bild av disc">
+                        </picture>
+                        <picture>
+                            <source srcset="media/bild14.webp" type="image/webp">
+                            <img style="margin-right: 10px;" src="media/bild14.jpg" alt="bild av disc">
+                        </picture>
                     </div>
                 </div>
+
                 <div id="shopInfo">
                     <h1>European open 2022 (Midrange)</h1>
                     <p class="price">150kr</p>
@@ -45,21 +57,34 @@
                         <button class="colorPick" style="background-color: lime;"></button>
                     </div>
                     <button id="putIn">Lägg till i varukorgen</button>
-                    <p>Designed with precision and built for flight, this disc from
+                    <p>
+                        Designed with precision and built for flight, this disc from
                         somewhere is your go-to midrange when
                         consistency matters. With flight numbers Speed 5.0, Glide 3.0, Turn 0.0, and Fade 4.0, this
                         midrange offers a flight pattern suited for intermediate and advanced players. Finishes with a
                         confident fade—reliable into headwinds or for strategic placement. Great for forehands,
-                        backhands, or tricky lies where trust is everything.</p>
+                        backhands, or tricky lies where trust is everything.
+                    </p>
                 </div>
+
                 <div id="productShopMobile">
-                    <img class="mobileImg" src="media/bild12.webp" alt="bild av disc">
-                    <img class="mobileImg" src="media/bild13.webp" alt="bild av disc">
-                    <img class="mobileImg" src="media/bild14.webp" alt="bild av disc">
+                    <picture>
+                        <source srcset="media/bild12.webp" type="image/webp">
+                        <img class="mobileImg" src="media/bild12.jpg" alt="bild av disc">
+                    </picture>
+                    <picture>
+                        <source srcset="media/bild13.webp" type="image/webp">
+                        <img class="mobileImg" src="media/bild13.jpg" alt="bild av disc">
+                    </picture>
+                    <picture>
+                        <source srcset="media/bild14.webp" type="image/webp">
+                        <img class="mobileImg" src="media/bild14.jpg" alt="bild av disc">
+                    </picture>
                 </div>
             </article>
-            <div style="display:flex;  justify-content: space-between;">
-                <video id="videoThrow" autoplay loop>
+
+            <div style="display:flex; justify-content: space-between;">
+                <video id="videoThrow" autoplay loop width="25%">
                     <source src="/media/kast3.webm" type="video/webm" />
                     <source src="/media/kast3.mov" type="video/mov" />
                 </video>
@@ -71,10 +96,10 @@
                 </div>
             </div>
         </div>
-
     </main>
+
     <footer>
-        <div class=" footinfo">
+        <div class="footinfo">
             <h2>Kontakt</h2>
             <p>+56 34 34 511</p>
             <p>(Mån-Fre 9-16)</p>
@@ -82,7 +107,6 @@
         </div>
         <div class="footinfo">
             <h2><a href="villkor.html">Köpvillkor</a></h2>
-            <p></p>
         </div>
         <div class="footinfo">
             <h2>Om oss</h2>
@@ -90,9 +114,12 @@
             <p class="mobileChangeFootInfo">Utvecklare av sidan är Alfons Eriksson Sveiven</p>
         </div>
     </footer>
-    <script>if (window.innerWidth < 900) {
+
+    <script>
+        if (window.innerWidth < 900) {
             document.getElementById('videoThrow').controls = true;
-        }</script>
+        }
+    </script>
 </body>
 
 </html>
