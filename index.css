@@ -285,6 +285,7 @@ article {
 
     .mobileImg {
         overflow: hidden;
+        width: 32vw;
     }
 
     .cartImg {
