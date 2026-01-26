@@ -113,13 +113,14 @@ footer a:hover {
 #productShop {
     width: 100%;
     height: 100%;
+
 }
 
 .productImg {
     object-fit: cover;
     vertical-align: middle;
     width: 100%;
-    height: 25%;
+    height: 37%;
     margin-top: 8px;
 }
 
